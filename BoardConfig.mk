@@ -56,8 +56,13 @@ TARGET_USERIMAGES_USE_EXT4 := true
 #TARGET_USERIMAGES_USE_F2FS := true
 TARGET_PREBUILT_KERNEL := device/lge/m216/recovery/kernel
 
+# Init
+TARGET_INIT_VENDOR_LIB := libinit_m216
+TARGET_RECOVERY_DEVICE_MODULES := libinit_m216
+
 # TWRP
 TW_THEME := portrait_hdpi
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 TW_SCREEN_BLANK_ON_BOOT := true
+TW_HAS_DOWNLOAD_MODE := true
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
